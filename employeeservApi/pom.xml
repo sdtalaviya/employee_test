@@ -44,7 +44,20 @@
             <groupId>commons-lang</groupId>
             <artifactId>commons-lang</artifactId>
         </dependency>
+
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-data-jpa</artifactId>
+            <version>2.2.11.RELEASE</version>
+        </dependency>
+        <dependency>
+            <groupId>org.jsonschema2pojo</groupId>
+            <artifactId>jsonschema2pojo-core</artifactId>
+            <version>1.0.2</version>
+        </dependency>
     </dependencies>
+
+
     <build>
         <plugins>
             <plugin>
@@ -55,7 +68,8 @@
                     <sourceDirectory>${project.basedir}/src/main/resources/v1/schema</sourceDirectory>
                     <targetPackage>com.paypal.bfs.test.employeeserv.api.model</targetPackage>
                     <useCommonsLang3>true</useCommonsLang3>
-                    <includeHashcodeAndEquals>false</includeHashcodeAndEquals>
+                    <includeHashcodeAndEquals>true</includeHashcodeAndEquals>
+                    <includeJsr303Annotations>true</includeJsr303Annotations>
                 </configuration>
                 <executions>
                     <execution>
