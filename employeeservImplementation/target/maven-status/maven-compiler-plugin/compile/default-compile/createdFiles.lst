@@ -1,8 +1,0 @@
-com/paypal/bfs/test/employeeserv/exceptions/RestResponseEntityExceptionHandler.class
-com/paypal/bfs/test/employeeserv/controllersImpl/EmployeeServiceImpl.class
-com/paypal/bfs/test/employeeserv/util/EmployeeAttributes.class
-com/paypal/bfs/test/employeeserv/util/EmployeeUtils.class
-com/paypal/bfs/test/employeeserv/controllersImpl/EmployeeResourceImpl.class
-com/paypal/bfs/test/employeeserv/transformer/EmployeeTransformer.class
-com/paypal/bfs/test/employeeserv/EmployeeservApplication.class
-com/paypal/bfs/test/employeeserv/exceptions/EmployeeInvalidException.class

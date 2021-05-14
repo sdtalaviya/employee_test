@@ -1,9 +1,0 @@
-com/paypal/bfs/test/employeeserv/api/model/EmployeeEntity.class
-com/paypal/bfs/test/employeeserv/api/repository/EmployeeRepository.class
-com/paypal/bfs/test/employeeserv/api/model/AddressEntity.class
-com/paypal/bfs/test/employeeserv/api/model/Address.class
-com/paypal/bfs/test/employeeserv/api/services/EmployeeService.class
-com/paypal/bfs/test/employeeserv/api/model/DateOfBirth.class
-com/paypal/bfs/test/employeeserv/api/model/ErrorResponse.class
-com/paypal/bfs/test/employeeserv/api/model/Employee.class
-com/paypal/bfs/test/employeeserv/api/controllers/EmployeeResource.class

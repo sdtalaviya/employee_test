@@ -16,7 +16,7 @@ public class EmployeeEntity {
 
     @Id
     @Column(name = "id")
-    private Long id;
+    private int id;
 
     private String firstName;
 
@@ -68,11 +68,11 @@ public class EmployeeEntity {
         this.dobYear = dobYear;
     }
 
-    public Long getId() {
+    public int getId() {
         return id;
     }
 
-    public void setId(Long id) {
+    public void setId(int id) {
         this.id = id;
     }
 

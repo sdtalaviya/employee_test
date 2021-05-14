@@ -11,7 +11,7 @@ import com.paypal.bfs.test.employeeserv.api.model.Employee;
 import com.paypal.bfs.test.employeeserv.exceptions.EmployeeInvalidException;
 import com.paypal.bfs.test.employeeserv.api.model.EmployeeEntity;
 import com.paypal.bfs.test.employeeserv.transformer.EmployeeTransformer;
-import com.paypal.bfs.test.employeeserv.util.EmployeeUtils;
+import com.paypal.bfs.test.employeeserv.util.EmployeeValidationsUtil;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
@@ -45,7 +45,7 @@ public class EmployeeResourceImpl implements EmployeeResource {
     @Override
     @Transactional
     public ResponseEntity<Employee> saveEmployee(Employee newEmployee) {
-        List<String> errors = EmployeeUtils.isValid(newEmployee);
+        List<String> errors = EmployeeValidationsUtil.isValid(newEmployee);
         if (errors.size() == 0) {
             EmployeeEntity employeeEntity = employeeTransformer.modelToEntity(newEmployee);
             try {

@@ -56,12 +56,18 @@
                 <groupId>com.h2database</groupId>
                 <artifactId>h2</artifactId>
                 <version>1.4.197</version>
+                <scope>compile</scope>
             </dependency>
             <dependency>
                 <groupId>org.projectlombok</groupId>
                 <artifactId>lombok</artifactId>
                 <version>1.16.22</version>
                 <scope>provided</scope>
+            </dependency>
+            <dependency>
+                <groupId>org.jsonschema2pojo</groupId>
+                <artifactId>jsonschema2pojo-core</artifactId>
+                <version>0.4.0</version>
             </dependency>
         </dependencies>
     </dependencyManagement>

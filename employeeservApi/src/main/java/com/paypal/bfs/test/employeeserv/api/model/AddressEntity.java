@@ -16,7 +16,7 @@ public class AddressEntity {
     @Id
     @GeneratedValue
     @Column(name = "id")
-    private Long id;
+    private int id;
 
     @OneToOne(mappedBy = "address")
     private EmployeeEntity employee;
@@ -35,11 +35,11 @@ public class AddressEntity {
 
     private String zipCode;
 
-    public Long getId() {
+    public int getId() {
         return id;
     }
 
-    public void setId(Long id) {
+    public void setId(int id) {
         this.id = id;
     }
 

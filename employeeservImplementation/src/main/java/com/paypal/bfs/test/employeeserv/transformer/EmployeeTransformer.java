@@ -13,7 +13,7 @@ public class EmployeeTransformer {
 
     public static Employee entityToModel(EmployeeEntity empEntity) {
         Employee employee = new Employee();
-        employee.setId(empEntity.getId().intValue());
+        employee.setId(empEntity.getId());
         employee.setFirstName(empEntity.getFirstName());
         employee.setLastName(empEntity.getLastName());
 
@@ -40,7 +40,7 @@ public class EmployeeTransformer {
         EmployeeEntity empEntity = new EmployeeEntity();
         if (employee.getId() != null) {
             // ignoring for post calls
-            empEntity.setId(Long.valueOf(employee.getId()));
+            empEntity.setId(employee.getId());
         }
         empEntity.setFirstName(employee.getFirstName());
         empEntity.setLastName(employee.getLastName());
